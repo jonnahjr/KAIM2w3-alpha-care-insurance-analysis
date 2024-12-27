@@ -1,0 +1,6 @@
+data/MachineLearningRating_v3.txt
+!data/MachineLearningRating_v3.txt.dvc
+__pycache__/
+*.pyc
+.DS_Store
+.enve
