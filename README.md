@@ -47,7 +47,7 @@ The dataset covers historical insurance claim data from February 2014 to August 
 dvc init
 
 # Configure Remote Storage
-dvc remote add -d localremote "C:/Users/getac/Documents/10 Academy/week 3/KAIMW3DVC"
+dvc remote add -d localremote ../10 Academy/week 3/KAIMW3DVC"
 
 # Add Data to DVC
 dvc add data/MachineLearningRating_v3.txt
