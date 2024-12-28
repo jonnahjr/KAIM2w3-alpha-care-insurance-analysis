@@ -43,18 +43,24 @@ The dataset covers historical insurance claim data from February 2014 to August 
   
 **DVC Setup Instructions**:
 ```bash
-# Initialize DVC
+# Initialize DVC in your project
 dvc init
 
 # Configure Remote Storage
-dvc remote add -d localremote ../10 Academy/week 3/KAIMW3DVC"
+# Update the path to your desired storage location
+dvc remote add -d localremote "../10 Academy/week 3/KAIMW3DVC"
 
 # Add Data to DVC
+# Replace with the path to your data file
 dvc add data/MachineLearningRating_v3.txt
 
 # Commit DVC Changes
-git add .dvc/config .dvc/cache data/.gitignore
+git add .dvc/config .dvc/cache data/.gitignore data/MachineLearningRating_v3.txt.dvc
 git commit -m "Add DVC configuration and data"
+
+# Push the data to remote storage
+dvc push
+
 ```
 
 ### 🧪 Task 3: A/B Hypothesis Testing
